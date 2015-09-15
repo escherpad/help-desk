@@ -9,5 +9,5 @@ You can:
 - talk to each other
 - hit us with a stick if we break things.
 
-We also have a gitter channel here!
+We also have a gitter channel here! [gitter link](https://gitter.im/escherpad/help-desk)
 
