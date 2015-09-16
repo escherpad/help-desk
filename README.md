@@ -112,34 +112,6 @@ to connect the Escherpad third-party jupyter client, you need to configure your 
 
 ### Finally:
 
-to connect one of your escherpad notebooks with your jupyter server,
+to connect one of your escherpad notebooks with your jupyter server, you can look at this visual guide: 
 
-1.  first create a new note
-
-    ![](http://www.escherpad.com/res/notes/55ebd0784e40168e500aff25/images/7f4a16c192f615be3f841894716f46a0-screenshot_2015-09-16_01_17_24.png)
-
-2.  type a note title you want, and then add `.ipynb` extension to it.
-
-    ![](http://www.escherpad.com/res/notes/55ebd0784e40168e500aff25/images/155bee079e615a538f479e7013929881-screenshot_2015-09-16_01_17_57.png)
-
-    now the notebook view should change to a ipython notebook view, and if you have any content in the original note, the html content would've been converted to markdown.
-
-    ![](http://www.escherpad.com/res/notes/55ebd0784e40168e500aff25/images/6f39f0e87b64b220c66ca3eca2bcdbb3-screenshot_2015-09-16_01_18_07.png)
-
-3.  Now to connect to a kernel, click on the kernel status button, a popover should appear. Click on the add kernel item, a modal should appear.
-
-    ![](http://www.escherpad.com/res/notes/55ebd0784e40168e500aff25/images/52ccc569bf50c38f7bfa8a48e337a930-screenshot_2015-09-16_01_18_33.png)
-
-    ![](http://www.escherpad.com/res/notes/55ebd0784e40168e500aff25/images/b229817bf7c9cb6bb3e5e48e5ebc73c5-screenshot_2015-09-16_01_18_44.png)
-
-4.  In this modal, type in the full base url including the port number. Do NOT include the `/tree` route. The directory name is a virtual folder that is used to form part of the ID for that note. After you finish, click on the connect to kernel button.
-
-    ![](http://www.escherpad.com/res/notes/55ebd0784e40168e500aff25/images/708894479014470f4a2f51e0d68702d7-screenshot_2015-09-16_01_19_44.png)
-
-5.  Now close the modal, the kernel should show "idle", and you are ready to go!
-
-    ![](http://www.escherpad.com/res/notes/55ebd0784e40168e500aff25/images/e62316e72dfe5dce95a6494964246bcf-screenshot_2015-09-16_01_19_58.png)
-
-6.  Example notebook:
-
-    ![](http://www.escherpad.com/res/notes/55ebd0784e40168e500aff25/images/710a1930dc0a4858e9deab689d5269e1-screenshot_2015-09-16_01_23_07.png)
+- [Connecting escherpad to jupyter notebook](http://lesquare.escherpad.com/@yang.ge/Connecting-escherpad-to-jupyter-uh5haqreb2nf)
