@@ -19,7 +19,7 @@ Here at Escherpad, we want to make programming and computation more accessible f
 
 ## On ~~iPython~~ Jupyter kernel server authorization
 
-Regardless of the authentication scheme (of both jupyter and jupyterHub), the notebook server's api endpoint authorization is currently done using cookies. This is a out-dated authorization method. Modern browser usually prevent setting cookies to a domain different from the one that the webpage is served from for [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), which means a third-party web application like escherpad can not get authorized to the jupyter server you have such as `http://localhost:8888` or `http://your-uni.edu:8000` as long as the authorization is cookie based.
+Regardless of the authentication scheme (of both jupyter and jupyterHub), the notebook server's api endpoint authorization is currently done using cookies. This is a out-dated authorization method. Modern browser usually prevent setting cookies to a domain different from the one that the webpage is served from [(look up CORS)](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing). This means a third-party web application like escherpad can not get authorized to the jupyter server you have such as `http://localhost:8888` or `http://your-uni.edu:8000` as long as the authorization is cookie based.
 
 Supporting third-party clients connected to a self-hosted notebook server is a common usecase lots of us in physics have, so I opened up an issue on jupyter/notebook about this.
 
