@@ -23,7 +23,7 @@ We currently expect you to be familiar with the setup of a jupyter server.
 
 Here at Escherpad, we want to make programming and computation more accessible for everybody, and our current technology stack allows us to do that with much ease. For now, since the team is just myself, I will focus on building the core product that power users are happy with. If you would like to help making it easier for learn python, julia, R or other languages for people who just started, you can help out by writing up setup tutorials. I am working on a blogging platform called `lesquare` to make sharing and collaborating on those things easier.
 
-## On ~~iPython~~ Jupyter kernel server authorization
+## On ~~IPython~~ Jupyter kernel server authorization
 
 Regardless of the authentication scheme (of both jupyter and jupyterHub), the notebook server's api endpoint authorization is currently done using cookies. This is a out-dated authorization method. Modern browser usually prevent setting cookies to a domain different from the one that the webpage is served from [(look up CORS)](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing). This means a third-party web application like escherpad can not get authorized to the jupyter server you have such as `http://localhost:8888` or `http://your-uni.edu:8000` as long as the authorization is cookie based.
 
@@ -38,7 +38,7 @@ You can help by up-voting these github issues to let the jupyter/notebook team k
 
 It takes only two steps to setup your local jupyter server! Before you go through the setup, here is a short video of what Escherpad's real-time jupyter client is all about:
 
-[![real-time collaborative iPython notebook demo](http://img.youtube.com/vi/si0QFaDStoo/maxresdefault.jpg)](http://www.youtube.com/watch?v=si0QFaDStoo)
+[![real-time collaborative IPython notebook demo](http://img.youtube.com/vi/si0QFaDStoo/maxresdefault.jpg)](http://www.youtube.com/watch?v=si0QFaDStoo)
 
 Now you have watched the video. Let's set it up!
 
@@ -57,19 +57,21 @@ pip install jupyter
 you shouldn't need `sudo` below:
 
 ```bash
-pip install ipython jupyter --upgrade
+pip install jupyter --upgrade
 
 ```
+
+You can also use the `--user` option if you do not have admin access. 
+You can also use [anaconda](http://continuum.io/downloads#py34) if you do not have a Python installation yet. 
 
 ### Step 2: Configure your jupyter profile
 
 to connect the Escherpad third-party jupyter client, you need to configure your jupyter kernel server to allow cross-origin http requests! The way to do this is the following:
 
-1.  First setup a profile for iPython:
+1.  First setup a profile for IPython:
 
     ```bash
-    jupyter notebook --generate-confi
-
+    jupyter notebook --generate-config
     ```
 
     this should return us the path of the configuration file that ipython just created. For us it is the one below:
