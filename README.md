@@ -1,8 +1,12 @@
+### Update:
+Escherpad is in private beta! You can register for the beta here: www.escherpad.com/signup. If you want to try it right now, just message us in gitter and tell us your name! This is so that we can make sure that our server would stay up running.
+
 # Escherpad Help Desk
 
 [![Join the chat at https://gitter.im/escherpad/help-desk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/escherpad/help-desk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 This is a github repo used for discussions and support on Escherpad.
+
 
 You can:
 
